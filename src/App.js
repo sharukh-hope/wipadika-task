@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import { Container, Navbar } from "react-bootstrap";
+import { Row } from "react-bootstrap";
+import { Col } from "react-bootstrap";
+import DescCard from "./Components/DescCard";
+import "bootstrap/dist/css/bootstrap.min.css";
+import MemberHolder from "./Components/MemberHolder";
+import MyForm from "./Components/MyForm";
+import SideBar from "./Components/SideBar";
+import NavBar from "./Components/NavBar";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        backgroundColor: "#f4f3ef",
+        width: "100%",
+      }}
+    >
+      <SideBar />
+      <div style={{ width: "100%" }}>
+        <NavBar />
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          <Container>
+            <Row>
+              <Col>
+                {" "}
+                <DescCard />
+                <MemberHolder />
+                <MyForm />
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;

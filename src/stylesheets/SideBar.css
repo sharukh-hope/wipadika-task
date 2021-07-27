@@ -1,0 +1,18 @@
+.side-bar {
+  min-width: 260px;
+  width: 10vw;
+  background-color: white;
+}
+.side-bar-item {
+  color: tomato;
+  display: flex;
+  align-items: center;
+  background-color: rgba(243, 243, 243, 0.952);
+  height: 40px;
+  padding: 0px 10px;
+}
+
+.divider {
+  width: 90%;
+  margin: auto;
+}

@@ -1,0 +1,17 @@
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.col-md-7 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.col-md-3 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
