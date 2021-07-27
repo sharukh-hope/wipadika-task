@@ -1,4 +1,4 @@
-import { Container, Navbar } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import DescCard from "./Components/DescCard";

@@ -1,6 +1,7 @@
 import Card from "react-bootstrap/Card";
 import img from "../images/download.png";
 import "../stylesheets/DescCard.css";
+import DM from "../images/DM.jpg";
 const DescCard = () => {
   return (
     <div style={{ margin: "10px 0px 10px" }}>
@@ -9,7 +10,9 @@ const DescCard = () => {
           <Card.Img
             className="bg-img"
             variant="top"
-            src="https://picsum.photos/1000/200"
+            src={DM}
+            width="1000px"
+            height="200px"
           />
         </div>
 
@@ -22,7 +25,7 @@ const DescCard = () => {
             <br />
           </div>
           <p className="quote">
-            "You miss a 100% <br />
+            "You miss 100% <br />
             of the shots
             <br /> you don't take"
           </p>

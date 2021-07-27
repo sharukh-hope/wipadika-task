@@ -10,14 +10,14 @@ const NavBar = () => {
       </label>
       <button className="nav-btn">
         {" "}
-        <img src={pie} />
+        <img src={pie} alt={pie} />
       </button>
       <button className="nav-btn">
         {" "}
-        <img src={bell} />
+        <img src={bell} alt={bell} />
       </button>
       <button className="nav-btn">
-        <img src={settings} />
+        <img src={settings} alt={settings} />
       </button>
     </div>
   );
